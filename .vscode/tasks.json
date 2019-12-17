@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "msvc todo-list",
+            "type": "shell",
+            "command": "cl.exe",
+            "args": [ 
+                "/Zi",                          /* debug symbols */
+                "/I",  "include",                   /* include path */
+                "/Fe:", "./bin/todo-list.exe",     /* output exe file */
+                "/Fo:", "./bin/todo-list.obj",     /* output obj file */
+                "todo-list.c"
+            ],
+            "group": {
+                "kind": "build", 
+                "isDefault": true
+            },                        
+            "presentation": {                
+                "reveal": "always"
+            },            
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

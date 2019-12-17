@@ -103,6 +103,6 @@ void listar_telefones(Pessoa *pessoa) {
 
 void listar_detalhes(Pessoa *pessoa) {
 	printf("Listando dados de %s:\n", pessoa->nome);
-	pessoa_listar_tarefas(pessoa);
-	pessoa_listar_telefones(pessoa);
+	listar_tarefas(pessoa);
+	listar_telefones(pessoa);
 }
